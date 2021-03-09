@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: Gill;
+  src: url(fonts/GillSans.ttc);
+}
+nav {
+  max-width: 980px;
+  min-height: 60px;
+  margin: 20px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+nav .logo {
+  width: 100px;
+  height: 50px;
+  background-image: url(/images/logo-black.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #000;
+  font-weight: 900;
+  font-size: 20px;
+  align-self: center;
+}
+nav .links {
+  width: 542px;
+  height: 42;
+  align-self: center;
+  display: flex;
+}
+nav a {
+  text-decoration: none;
+  color: #000;
+  margin: auto;
+  font-family: gill-sans-nova, sans-serif;
+}
+nav .pipe {
+  background-color: #79ADDC;
+  width: 1px;
+  height: 30px;
+}
+
+.black-line {
+  background-color: black;
+  width: 980px;
+  height: 1px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .black-line {
+    width: 100%;
+    height: 1px;
+    margin: 0 auto;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+footer {
+  max-width: 1280px;
+  min-height: 100px;
+  margin: 0 auto;
+  background-color: cornflowerblue;
+  text-align: center;
+  color: #fff;
+  font-weight: 900;
+  font-size: 12px;
+  align-self: center;
+  font-family: gill-sans-nova, sans-serif;
+}
+footer .logo {
+  width: 130px;
+  height: 30px;
+  background-image: url(/images/logo-white.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 100px;
+  margin-left: 100px;
+}
+footer p {
+  text-align: center;
+  color: #fff;
+  font-weight: 900;
+  font-size: 12px;
+  align-self: center;
+  font-family: gill-sans-nova, sans-serif;
+  margin-top: -55px;
+}
+footer .socialMedia {
+  float: right;
+  padding-right: 30px;
+  margin-top: -35px;
+}
+footer .socialMedia .fa {
+  font-size: 12px;
+  width: 22.9px;
+  height: 22.9px;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 5px;
+}
+footer .socialMedia .fa-facebook {
+  background: #fff;
+  color: #79ADDC;
+  border-radius: 5px;
+}
+footer .socialMedia .fa-twitter {
+  background: #fff;
+  color: #79ADDC;
+  border-radius: 5px;
+}
+footer .socialMedia .fa-instagram {
+  background: #fff;
+  color: #79ADDC;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 660px) {
+  footer {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin: 0 auto;
+    display: flex;
+  }
+  footer p {
+    padding-right: 0px;
+    padding-left: 0px;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  footer .logo {
+    padding-right: 0px;
+    padding-left: 0px;
+    flex-direction: column;
+    margin-right: 50px;
+  }
+  footer .socialMedia {
+    float: right;
+    margin-left: 180px;
+    margin-top: 40px;
+    padding-right: 0px;
+    padding-left: 0px;
+    flex-direction: column;
+  }
+}
+.about {
+  max-width: 980px;
+  margin: 0 auto;
+}
+.about .about-top-section {
+  margin-top: 90px;
+}
+.about .about-top-section h1 {
+  font-size: 60px;
+  font-family: proxima-nova-condensed, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.about .about-top-section P {
+  font-family: gill-sans-nova, sans-serif;
+  font-size: 16px;
+}
+.about .about-bottom-section {
+  margin-top: 95px;
+}
+.about .about-bottom-section h3 {
+  font-size: 40px;
+  font-family: proxima-nova-condensed, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.about .about-bottom-section .client {
+  max-width: 676px;
+  min-height: 150px;
+  display: flex;
+  margin-bottom: 38px;
+}
+.about .about-bottom-section .client .client-image {
+  width: 260px;
+  height: 150px;
+}
+.about .about-bottom-section .client .client1 {
+  background-image: url(../images/about-client-01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about .about-bottom-section .client .client2 {
+  background-image: url(../images/about-client-02.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about .about-bottom-section .client .client-quote {
+  position: relative;
+  min-height: 50px;
+  width: 100%;
+  padding-left: 27px;
+  font-family: gill-sans-nova, sans-serif;
+  font-size: 16px;
+}
+.about .about-bottom-section .client .client-quote p:last-of-type {
+  margin-bottom: 55px;
+}
+.about .about-bottom-section .client .client-quote .client-name {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #79ADDC;
+  font-family: proxima-nova-condensed, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+}
+
+@media only screen and (max-width: 600px) {
+  .about {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .about p {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}

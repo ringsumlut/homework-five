@@ -1,0 +1,93 @@
+.about {
+    max-width: 980px;
+    margin: 0 auto;
+    //background-color: aqua;
+
+    .about-top-section {
+        margin-top: 90px;
+ 
+
+        h1 {
+            font-size: 60px;
+            font-family: proxima-nova-condensed, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        P {
+            font-family: gill-sans-nova, sans-serif;
+            font-size: 16px;
+        }
+    }
+
+    .about-bottom-section {
+        margin-top: 95px;
+
+        h3{
+            font-size: 40px;
+            font-family: proxima-nova-condensed, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .client {
+            max-width: 676px;
+            min-height: 150px;     
+            display: flex;
+            margin-bottom: 38px;
+            .client-image {
+                width: 260px;
+                height: 150px;
+                //background-color: yellow;
+            }
+            .client1 {
+                background-image: url(../images/about-client-01.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .client2 {
+                background-image: url(../images/about-client-02.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            
+            .client-quote {
+                //background-color: bisque;
+                position: relative;
+                min-height: 50px;
+                width: 100%;
+                padding-left: 27px;
+                font-family: gill-sans-nova, sans-serif;
+                font-size: 16px;
+
+                p:last-of-type {
+                        margin-bottom: 55px;
+                }
+                .client-name {
+                    position: absolute;
+                    right: 0; 
+                    bottom: 0;  
+                    color: #79ADDC;
+                    font-family: proxima-nova-condensed, sans-serif;
+                    font-size: 20px;
+                    font-style: normal;
+               
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .about {
+        //background-color: lightblue;
+        padding-left: 0px;
+        padding-right: 0px;
+
+      p {
+        padding-left: 0px;
+        padding-right: 0px;
+        }
+    }
+
+}
